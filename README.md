@@ -1,2 +1,0 @@
-# HighCaliberRounds
-Handyman business webpage
