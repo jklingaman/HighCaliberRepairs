@@ -14,6 +14,7 @@ html, body {
 body {
 	background: #020b13;
 	font-family: IM Fell Great Primer;
+	align-items: center;
 }
 #landing-img {
 	opacity: 0.5;
@@ -28,7 +29,7 @@ body {
 }
 #landing-div {
 	position: relative;
-	height: 75vh;
+	height: 100vh;
 	width: 100%;
 	text-align: center;
 }
@@ -43,53 +44,56 @@ body {
 }
 #landing-text {
 	position: absolute;
-	top: 50%;
+	top: 45%;
 	left: 50%;
 	transform: translate(-50%,-50%);
 	color: #daab2d;
 	font-size: 4rem;
 	text-shadow: 25px 18px 5px rgba(0, 0, 0, 0.7);
 }
-.main {
-	height: 30vh;
-	width: 100%;
-	padding: 10px;
-	margin: 10px;
-	text-align: center;
+.parent {
+    width: 100%; 
+    padding: 10px; 
+    margin: 10px auto; 
+    text-align: center; 
+    box-sizing: border-box; 
+    height: auto;
+    min-height: fit-content; 
 }
-.main2 {
+
+.parent2 {
 	width: 100%;
 	padding: 20px;
 	margin: 10px auto;
+	gap: 20px;
 	border-radius: 25px;
 	text-align: center;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	box-sizing: border-box;
+	height: auto;
+	min-height: fit-content;
 }
-.main-left {
+.parent3 {
+	display: grid;
+	gird-template-columns: 1fr auto;
+	justify-items: center;
+	align-items: center;
+	gap: 20px;
 	width: 100%;
-	padding: 20px;
-	margin: 10px auto;
-	border-radius: 25px;
-	text-align: right;
-	display: flex;
-	flex-direction: column;
-	align-items: left;
-	box-sizing: border-box;
+	min-height: fit-content;
+	padding: 0;
 }
-.main-right {
-	width: 100%;
-	padding: 20px;
-	margin: 10px auto;
-	border-radius: 25px;
-	text-align: left;
+.main-sbs {
 	display: flex;
-	flex-direction: column;
-	align-items: right;
-	box-sizing: border-box;
-	}
+	flex-direction: row;
+	align-items: center;
+	gap: 20px;
+	width: auto;
+	height: auto;
+	text-align: center;
+}
 .flexbox {
 	display: flex;
 	justify-content: space-around;
@@ -99,16 +103,16 @@ body {
 	gap: 10px;
 }
 .flexbox-img {
-	width: 100%;
+	width: 30%;
 	max-width: 300px;
-	height: auto;
 	border-radius: 10px;
 }
 .flexbox-img-circle {
-	width: 50%;
+	width: 30%;
 	max-width: 300px;
+	height: auto;
 	border-radius: 50%;
-	padding: 50px;
+	
 }
 .flexbox-text {
 	color: #daab2d;
@@ -116,15 +120,13 @@ body {
 }
 .flexbox-text-left {
 	color: #daab2d;
-	margin-left: 30px;
 	text-align: left;
 }
 .flexbox-text-right {
 	color: #daab2d;
-	margin-left: 30%;
-	margin-bottom: 30%;
+	padding: 20px;
 	text-align: center;
-	
+	flex: 1;
 }
 h2 {
 	color: #daab2d;
@@ -137,20 +139,22 @@ h2 {
 	<div id = "landing-overlay"></div>
 	<h1 id = "landing-text"> High Caliber Repairs </h1>
 </div>
-<div class = main>
+<div class = parent>
 	<img class = "logo" src = "https://i.postimg.cc/DZctfTKT/HCR-Logo.png" width = "150">
 	<h2> Dedicated to giving top tier services, at a reasonable price! </h2>
 </div>
-<div class = "main2">
+<div class = "parent2">
 		<div class = "flexbox">
 				<img class = "flexbox-img" src = "https://i.postimg.cc/q745gDNy/TC-03301.jpg">
 				<img class = "flexbox-img" src = "https://i.postimg.cc/KcfqsDs8/fixed.jpg">
 		</div>
 		<p class = "flexbox-text"> We take a sense of pride in transforming unwanted damages, whether it's unfortunate accidents, or erosion over time. <br>Guaranteed to give you <em>high quality</em> results regardless of the damage. </p>
 </div>
-<div class = "main-left"> 
-		<img class = "flexbox-img-circle" src = "https://i.postimg.cc/VsVp4FhP/TC-05218.jpg">	
-		<p class = "flexbox-text-right"> afdsasdfsdfsdf </p>
+<div class = "parent3">
+		<div class = "main-sbs"> 
+				<img class = "flexbox-img-circle" src = "https://i.postimg.cc/VsVp4FhP/TC-05218.jpg">	
+						<p class = "flexbox-text-right"> Fusce porttitor sapien id lorem malesuada, ut accumsan eros pretium. Donec fringilla eros pharetra blandit ultricies. Donec est nisi, sodales semper consectetur vel, faucibus consectetur ante. Morbi nec est felis.   </p>
+		</div>
 </div>
 </body>
 </html> 
