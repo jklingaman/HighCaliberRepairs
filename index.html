@@ -53,8 +53,6 @@ body {
 }
 .parent {
     width: 100%; 
-    padding: 10px; 
-    margin: 10px auto; 
     text-align: center; 
     box-sizing: border-box; 
     height: auto;
@@ -63,16 +61,14 @@ body {
 
 .parent2 {
 	width: 100%;
-	padding: 20px;
-	margin: 10px auto;
-	gap: 20px;
+	max-width: 1400px;
+	gap: 5px;
 	border-radius: 25px;
 	text-align: center;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	box-sizing: border-box;
-	height: auto;
 	min-height: fit-content;
 }
 .parent3 {
@@ -82,6 +78,7 @@ body {
 	align-items: center;
 	gap: 20px;
 	width: 100%;
+	max-width: 1400px;
 	min-height: fit-content;
 	padding: 0;
 }
@@ -105,22 +102,24 @@ body {
 }
 .flexbox {
 	display: flex;
-	justify-content: space-around;
+	justify-content: center;
 	align-items: center;
 	width: 100%;
 	flex-wrap: wrap;
-	gap: 10px;
+	gap: 10%;
 }
 .flexbox-img {
-	width: 100%;
-	height: 45vh;
-	max-width: 300px;
+	width: 25%;
+	height: auto;
+	max-width: 400px;
 	border-radius: 10px;
+	aspect-ratio: 2 / 3;
 }
 .flexbox-img-circle {
 	width: 100%;
 	max-width: 300px;
-	height: 30vh;
+	height: 100%;
+	max-height: 300px;
 	border-radius: 50%;
 	
 }
@@ -130,6 +129,7 @@ body {
 }
 .flexbox-text-left {
 	color: #daab2d;
+	padding: 10%;
 	text-align: center;
 	flex: 1;
 }
@@ -171,9 +171,10 @@ h2 {
 </div>
 <div class = "parent3">
 	<div class = "main-sbs">
-	<p class = "flexbox-text-right"> Fusce porttitor sapien id lorem malesuada, ut accumsan eros pretium. Donec fringilla eros pharetra blandit ultricies. Donec est nisi, sodales semper consectetur vel, faucibus consectetur ante. Morbi nec est felis. <p>
+	<p class = "flexbox-text-right"> Fusce porttitor sapien id lorem malesuada, ut accumsan eros pretium. Donec fringilla eros pharetra blandit ultricies. Donec est nisi, sodales semper consectetur vel, faucibus consectetur ante. Morbi nec est felis. </p>
 		<div class = "auto-right">
 			<img class = "flexbox-img-circle" src = "https://i.postimg.cc/wB3m7x6L/IMG-4743.jpg"
+	</div>
 	</div>
 </div>
 </body>
