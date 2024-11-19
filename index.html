@@ -85,10 +85,19 @@ body {
 	min-height: fit-content;
 	padding: 0;
 }
+.auto-left{
+	margin: auto;
+	padding-left: 15%;
+}
+.auto-right{
+	margin: auto;
+	padding-right: 15%;
+}
 .main-sbs {
 	display: flex;
 	flex-direction: row;
 	align-items: center;
+	justify-content: center;
 	gap: 20px;
 	width: auto;
 	height: auto;
@@ -103,14 +112,15 @@ body {
 	gap: 10px;
 }
 .flexbox-img {
-	width: 30%;
+	width: 100%;
+	height: 45vh;
 	max-width: 300px;
 	border-radius: 10px;
 }
 .flexbox-img-circle {
-	width: 30%;
+	width: 100%;
 	max-width: 300px;
-	height: auto;
+	height: 30vh;
 	border-radius: 50%;
 	
 }
@@ -120,11 +130,12 @@ body {
 }
 .flexbox-text-left {
 	color: #daab2d;
-	text-align: left;
+	text-align: center;
+	flex: 1;
 }
 .flexbox-text-right {
 	color: #daab2d;
-	padding: 20px;
+	padding: 10%;
 	text-align: center;
 	flex: 1;
 }
@@ -135,7 +146,7 @@ h2 {
 </head>
 <body>
 <div id = "landing-div" >
-	<img id = "landing-img" src = "https://i.postimg.cc/rwH2YVfK/american-flag.gif">
+	<img id = "landing-img" src = "https://i.postimg.cc/rwH2YVfK/american-flag.gif" alt = "waving-flag">
 	<div id = "landing-overlay"></div>
 	<h1 id = "landing-text"> High Caliber Repairs </h1>
 </div>
@@ -145,16 +156,25 @@ h2 {
 </div>
 <div class = "parent2">
 		<div class = "flexbox">
-				<img class = "flexbox-img" src = "https://i.postimg.cc/q745gDNy/TC-03301.jpg">
-				<img class = "flexbox-img" src = "https://i.postimg.cc/KcfqsDs8/fixed.jpg">
+				<img class = "flexbox-img" alt = "before" src = "https://i.postimg.cc/gJJNcb7T/TC-03301.jpg">
+				<img class = "flexbox-img" alt = "after" src = "https://i.postimg.cc/VN930wDs/fixed.jpg">
 		</div>
 		<p class = "flexbox-text"> We take a sense of pride in transforming unwanted damages, whether it's unfortunate accidents, or erosion over time. <br>Guaranteed to give you <em>high quality</em> results regardless of the damage. </p>
 </div>
 <div class = "parent3">
 		<div class = "main-sbs"> 
-				<img class = "flexbox-img-circle" src = "https://i.postimg.cc/VsVp4FhP/TC-05218.jpg">	
+			<div  class = "auto-left">
+				<img class = "flexbox-img-circle" src = "https://i.postimg.cc/VstXqNXF/TC-00002.jpg">	
+				</div>
 						<p class = "flexbox-text-right"> Fusce porttitor sapien id lorem malesuada, ut accumsan eros pretium. Donec fringilla eros pharetra blandit ultricies. Donec est nisi, sodales semper consectetur vel, faucibus consectetur ante. Morbi nec est felis.   </p>
 		</div>
+</div>
+<div class = "parent3">
+	<div class = "main-sbs">
+	<p class = "flexbox-text-right"> Fusce porttitor sapien id lorem malesuada, ut accumsan eros pretium. Donec fringilla eros pharetra blandit ultricies. Donec est nisi, sodales semper consectetur vel, faucibus consectetur ante. Morbi nec est felis. <p>
+		<div class = "auto-right">
+			<img class = "flexbox-img-circle" src = "https://i.postimg.cc/wB3m7x6L/IMG-4743.jpg"
+	</div>
 </div>
 </body>
 </html> 
