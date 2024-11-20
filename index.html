@@ -15,6 +15,7 @@ body {
 	background: #020b13;
 	font-family: IM Fell Great Primer;
 	align-items: center;
+	justify-content: center;
 }
 #landing-img {
 	opacity: 0.5;
@@ -61,10 +62,10 @@ body {
 
 .parent2 {
 	width: 100%;
-	max-width: 1400px;
-	gap: 5px;
+	gap: 10px;
 	border-radius: 25px;
 	text-align: center;
+	justify-content: center;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -76,26 +77,25 @@ body {
 	gird-template-columns: 1fr auto;
 	justify-items: center;
 	align-items: center;
-	gap: 20px;
+	gap: 10px;
 	width: 100%;
-	max-width: 1400px;
 	min-height: fit-content;
 	padding: 0;
 }
 .auto-left{
 	margin: auto;
-	padding-left: 15%;
+	padding-left: 20%;
 }
 .auto-right{
 	margin: auto;
-	padding-right: 15%;
+	padding-right: 20%;
 }
 .main-sbs {
 	display: flex;
 	flex-direction: row;
 	align-items: center;
 	justify-content: center;
-	gap: 20px;
+	gap: 10px;
 	width: auto;
 	height: auto;
 	text-align: center;
@@ -107,6 +107,14 @@ body {
 	width: 100%;
 	flex-wrap: wrap;
 	gap: 10%;
+}
+.flexbox2 {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	width: 100%;
+	gap: 10px;
 }
 .flexbox-img {
 	width: 25%;
@@ -121,7 +129,13 @@ body {
 	height: 100%;
 	max-height: 300px;
 	border-radius: 50%;
-	
+}
+.flexbox-img-circle-h {
+	height: 100%;
+	max-height: 300px;
+	width: 100%;
+	max-width: 250px;
+	border-radius: 50%;
 }
 .flexbox-text {
 	color: #daab2d;
@@ -139,7 +153,10 @@ body {
 	text-align: center;
 	flex: 1;
 }
-h2 {
+.flex-center {
+	border-radius: 10%;
+}
+h2, p {
 	color: #daab2d;
 }
 </style>
@@ -164,18 +181,23 @@ h2 {
 <div class = "parent3">
 		<div class = "main-sbs"> 
 			<div  class = "auto-left">
-				<img class = "flexbox-img-circle" src = "https://i.postimg.cc/VstXqNXF/TC-00002.jpg">	
+				<img alt = "Bathroom-door" class = "flexbox-img-circle" src = "https://i.postimg.cc/VstXqNXF/TC-00002.jpg">	
 				</div>
 						<p class = "flexbox-text-right"> Fusce porttitor sapien id lorem malesuada, ut accumsan eros pretium. Donec fringilla eros pharetra blandit ultricies. Donec est nisi, sodales semper consectetur vel, faucibus consectetur ante. Morbi nec est felis.   </p>
 		</div>
 </div>
 <div class = "parent3">
 	<div class = "main-sbs">
-	<p class = "flexbox-text-right"> Fusce porttitor sapien id lorem malesuada, ut accumsan eros pretium. Donec fringilla eros pharetra blandit ultricies. Donec est nisi, sodales semper consectetur vel, faucibus consectetur ante. Morbi nec est felis. </p>
+	<p class = "flexbox-text-left"> Fusce porttitor sapien id lorem malesuada, ut accumsan eros pretium. Donec fringilla eros pharetra blandit ultricies. Donec est nisi, sodales semper consectetur vel, faucibus consectetur ante. Morbi nec est felis. </p>
 		<div class = "auto-right">
-			<img class = "flexbox-img-circle" src = "https://i.postimg.cc/wB3m7x6L/IMG-4743.jpg"
+			<img alt = "half-wall" class = "flexbox-img-circle" src = "https://i.postimg.cc/wB3m7x6L/IMG-4743.jpg"
 	</div>
 	</div>
+</div>
+<div>
+	<div class = "flexbox2">
+	<p class = "flexbox2-text"> Fusce porttitor sapien id lorem malesuada, ut accumsan eros pretium. Donec fringilla eros pharetra blandit ultricies. Donec est nisi, sodales semper consectetur vel, faucibus consectetur ante. Morbi nec est felis. </p>
+	<img alt = "handshake" class = "flex-center" src = "https://i.postimg.cc/6QJB3CCR/z-handshake.jpg">
 </div>
 </body>
 </html> 
