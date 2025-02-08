@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=IM+Fell+Great+Primer:ital@0;1&family=Merienda:wght@300..900&display=swap');
+html, body {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+}
+body {
+	background: #020b13;
+	font-family: IM Fell Great Primer;
+}
+#landing-img {
+	opacity: 0.5;
+	width: 100%;
+	height: 100vh;
+	border-radius: 2.5px;
+	object-fit: cover;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: -1;
+}
+#landing-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+	position: relative;
+	height: 100vh;
+	width: 100%;
+	text-align: center;
+}
+#landing-overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100vh;
+	background: rgba(0, 0, 0, 0.05);
+	z-index:0;
+}
+#landing-text {
+	position: absolute;
+	top: 45%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	color: #daab2d;
+	font-size: 5.5rem;
+	text-shadow: 25px 18px 5px rgba(0, 0, 0, 0.7);
+    z-index: 1;
+}
+#header {
+    position: fixed;
+    align-items: center;
+	top: 0;
+	left: 0;
+	padding-top: 2.5%;
+    padding-left: 5%;
+    padding-right: 10%;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    z-index: 1;
+}
+#hamburger {
+    font-size: 2.5rem;
+    display: none;
+    cursor: pointer;
+}
+#close-btn {
+    display: none;
+}
+#logo{
+    width: 150px;
+    z-index: 1;
+}
+a {
+    text-decoration: none;
+    color: whitesmoke;
+    opacity: 80%;
+}
+a:hover {
+color: lightgoldenrodyellow;
+}
+ol {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 90%;
+    font-size: 4vh;
+}
+#nav-menu {
+    list-style-type: none;
+    display: flex; 
+    margin: 0;
+    padding: 0;
+    gap: 16px;
+    font-size: 4vh;
+}
+@media(max-width: 992px) {
+    #landing-text {
+        top: 40%;
+    }
+    #logo {
+        width: 250px;
+    }
+    #landing-text {
+        font-size: 9rem;
+    }
+    ol {
+        font-size: 3.5vh;
+        padding-right: 10%;
+    }
+}
+@media(max-width: 576px) {
+    body {
+        height: 100vh;
+        width: 100vw;
+    }
+    #landing-text {
+        font-size: 4rem;
+    }
+    #logo {
+        width: 200px;
+    }
+    #hamburger {
+        display: block;
+        color: white;
+    }
+    #nav-menu {
+        display: none;
+        flex-direction: column; 
+        width: 90%;
+        text-align: center;
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding: 20px 0;
+        z-index: 2;
+    }
+    #nav-menu a {
+        color: white;
+        opacity: 1; 
+    }
+    #close-btn {
+        font-size: 1.5rem;
+        color: white;
+        cursor: pointer;
+        position: absolute;
+        top: 20px;
+        right: 40px;
+        display: block;
+    }
+
+    #close-btn:hover {
+        color: lightcoral;
+    }
+    #nav-menu.active {
+        display: flex;
+    }
+}

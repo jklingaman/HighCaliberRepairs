@@ -1,0 +1,15 @@
+body {
+    background-color: black;
+    color: aliceblue;
+}
+#opener {
+    text-align: center;
+    padding: 20px;
+}
+h1 {
+    color: #daab2d;
+    font-size: 7vh;
+}
+h3 {
+    font-size: 3vh;
+}
